@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Flex, Text } from '@chakra-ui/react';
+import { Box, Flex, HStack, Text, Image } from '@chakra-ui/react';
 
 interface Player {
   address: string;
@@ -40,12 +40,17 @@ const PlayersList: React.FC<PlayersListProps> = ({ players }) => {
           bg="white"
           shadow="md"
         >
+          <HStack width="100%" height="100%" p={4} spacing={4} justifyContent="space-between">
           <Text fontSize="lg" fontWeight="bold">
-            Address: {player.address}
+          {player.address && `${player.address.slice(0, 6)}...${player.address.slice(-4)}`}
           </Text>
+          <HStack>
           <Text fontSize="md" color="gray.500">
-            Amount: {player.amount}
+            {player.amount} 
           </Text>
+          <Image src="sui-sui-logo.png" alt="Logo" boxSize="20px" />
+          </HStack>
+          </HStack>
         </Box>
       ))}
     </Flex>
