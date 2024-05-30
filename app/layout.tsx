@@ -1,7 +1,8 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import { ChakraProvider } from '@chakra-ui/react';
+import React from 'react';
+import ClientProviders from './Components/ClientProviders';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -10,15 +11,13 @@ export const metadata: Metadata = {
     description: 'Lottery on Sui',
 };
 
-export default function RootLayout({
-    children,
-}: {
-    children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
         <html lang="en">
             <body className={inter.className}>
-                <ChakraProvider>{children}</ChakraProvider>
+                <ClientProviders>
+                    {children}
+                </ClientProviders>
             </body>
         </html>
     );

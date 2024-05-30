@@ -1,12 +1,11 @@
 'use client';
-import { Flex,Box,Text } from "@chakra-ui/react";
-import Navbar from "./Components/NavBar";
+import { Flex, Box, Text } from '@chakra-ui/react';
+import Navbar from './Components/Navbar';
 
 const HomePage: React.FC = () => {
-
     return (
         <>
-        <Navbar />
+            <Navbar />
             <Text fontSize="5xl">Hello World</Text>
         </>
     );
