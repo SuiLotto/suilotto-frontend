@@ -1,42 +1,30 @@
 import {
     Box,
     Flex,
-    Button,
-    useColorModeValue,
-    useColorMode,
+    Text,
     HStack,
+    Image,
 } from '@chakra-ui/react';
-import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 import { ConnectButton } from '@mysten/dapp-kit';
 
 const Navbar = () => {
-    const { colorMode, toggleColorMode } = useColorMode();
 
     return (
-        <Box bg={'gray.200'} px={4}>
-            <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
-                <HStack spacing={8} alignItems={'center'}>
-                    <Box>Logo</Box>
-                    <HStack
-                        as={'nav'}
-                        spacing={4}
-                        display={{ base: 'none', md: 'flex' }}
+        <Box bg={'gray.200'} p={4} width={'100%'}>
+            <Flex alignItems={'center'} justifyContent={'space-between'}>
+                <Box display={'flex'} alignItems={'center'}>
+                    <Image src="sui-sui-logo.png" alt="Logo" boxSize="40px" />
+                    <Text
+                    ml={2}
+                    fontSize="xl"
+                    fontFamily="Audiowide"
+                    fontWeight="bold"
+                    color="#6fbcf0"
                     >
-                        <Button variant="solid">Button 1</Button>
-                        <Button variant="solid">Button 2</Button>
-                        <Button variant="solid">Button 3</Button>
-                    </HStack>
-                </HStack>
-                <Flex alignItems={'center'}>
-                    <ConnectButton />
-
-                    <Button
-                        onClick={toggleColorMode}
-                        aria-label="Toggle color mode"
-                    >
-                        {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
-                    </Button>
-                </Flex>
+                    SuiLotto
+                    </Text>
+                </Box>
+                <ConnectButton />
             </Flex>
         </Box>
     );
