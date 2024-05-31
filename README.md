@@ -1,35 +1,43 @@
-# Sui dApp Starter Template
+# Sui Lotto
 
-This dApp was created using `@mysten/create-dapp` that sets up a basic React
-Client dApp using the following tools:
+A brief description of your project.
 
-- [React](https://react.dev/) as the UI framework
-- [TypeScript](https://www.typescriptlang.org/) for type checking
-- [Vite](https://vitejs.dev/) for build tooling
-- [Radix UI](https://www.radix-ui.com/) for pre-built UI components
-- [ESLint](https://eslint.org/)
-- [`@mysten/dapp-kit`](https://sdk.mystenlabs.com/dapp-kit) for connecting to
-  wallets and loading data
-- [pnpm](https://pnpm.io/) for package management
+## Table of Contents
 
-## Starting your dApp
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-To install dependencies you can run
+## Installation
 
-```bash
-pnpm install
-```
+1. Clone the repository.
+  ```bash
+  git clone git@github.com:SuiLotto/suilotto-frontend.git
+  ```
+2. Install the dependencies.
+  ```bash
+  npm install
+  ```
 
-To start your dApp in development mode run
+## Usage
 
-```bash
-pnpm dev
-```
+1. Start the development server.
+  ```bash
+  npm run dev
+  ```
 
-## Building
+## Contributing
 
-To build your app for deployment you can run
+Contributions are welcome! Please follow these steps:
 
-```bash
-pnpm build
-```
+1. Fork the repository.
+2. Create a new branch.
+3. Make your changes.
+4. Commit your changes.
+5. Push to the branch.
+6. Open a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
