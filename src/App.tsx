@@ -14,6 +14,10 @@ function App() {
           players={[
             { address: "0x1234", amount: 100 },
             { address: "0x2345", amount: 200 },
+            { address: "0x1234", amount: 100 },
+            { address: "0x2345", amount: 200 },
+            { address: "0x1234", amount: 100 },
+            { address: "0x2345", amount: 200 },
           ]}
         />
         <GameBoard
