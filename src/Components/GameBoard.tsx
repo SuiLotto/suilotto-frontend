@@ -12,7 +12,7 @@ interface PlayersListProps {
 
 const GameBoard: React.FC<PlayersListProps> = ({ players }) => {
   const [winner, setWinner] = useState<Player | null>(null);
-  const [timeLeft, setTimeLeft] = useState(60);
+  const [timeLeft, setTimeLeft] = useState(20);
   const [gameState, setGameState] = useState<"waiting" | "ongoing" | "drawing">(
     "waiting",
   );
@@ -74,7 +74,7 @@ const GameBoard: React.FC<PlayersListProps> = ({ players }) => {
   const startGame = () => {
     setWinner(null);
     setGameState("ongoing");
-    setTimeLeft(60);
+    setTimeLeft(20);
   };
 
   let displayMessage;
