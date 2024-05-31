@@ -1,6 +1,8 @@
 # Sui Lotto
 
-A brief description of your project.
+On chain lotto game on the Sui Blockchain
+
+![Screenshot](https://prnt.sc/8z1rVikD0Bj3)
 
 ## Table of Contents
 
@@ -41,3 +43,5 @@ Contributions are welcome! Please follow these steps:
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+
+
