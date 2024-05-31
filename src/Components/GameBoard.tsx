@@ -92,7 +92,7 @@ const GameBoard: React.FC<PlayersListProps> = ({ players }) => {
     <Flex
       direction="column"
       height="100vh"
-      width="400px"
+      width="600px"
       alignItems="center"
       justifyContent="flex-start"
       p={4}
